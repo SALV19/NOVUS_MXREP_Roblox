@@ -1,0 +1,32 @@
+@startuml Registro en la aplicación
+title Registro en la aplicación 
+|Usuario|
+start
+:Ingresa a la aplicación;
+:Solicita Interfáz de Usuario para inciar sesión;
+|#AntiqueWhite|Sistema|
+:Muestra interfaz inicio de sesión;
+|Usuario|
+:Solicita Interfaz de recuperación de contraseña;
+|Sistema|
+:Muestra interfaz de recuperación de contraseña;
+|Usuario|
+:Ingresa correo;
+|Sistema|
+:Manda correo para verificar inicio de sesión;
+:Muestra interfaz para verificar el código;
+|Usuario|
+:Ingresa el código de inicio de sesión;
+|Sistema|
+if (codigo es correcto) then (Si)
+  :Muestra interfaz para ingresar la nueva contraseña;
+  |Usuario|
+  :Ingresa nueva contraseña;
+  |Sistema|
+  :Almacena nueva contraseña en la base de datos;
+else (No)
+  :Error código no coincide;
+endif
+stop
+
+@enduml

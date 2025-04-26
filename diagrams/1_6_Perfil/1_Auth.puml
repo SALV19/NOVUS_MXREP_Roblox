@@ -1,0 +1,21 @@
+@startuml Autentificación
+title Autentificación 
+|Usuario|
+start
+:Ingresa a la aplicación;
+:Solicita Interfáz de Usuario para inciar sesión;
+repeat
+  |#AntiqueWhite|Sistema|
+  :Muestra interfaz inicio de sesión;
+  |Usuario|
+  :Ingresa credenciales;
+  |Sistema|
+  if (Credenciales válidas) then (Si)
+    :Asignar permisos al usuario;
+    :Dar acceso a la aplicación;
+    stop
+  else (No)
+    :Mensaje de error : Credenciales incorrectas;
+  endif
+repeatwhile("Verifica credenciales")
+@enduml

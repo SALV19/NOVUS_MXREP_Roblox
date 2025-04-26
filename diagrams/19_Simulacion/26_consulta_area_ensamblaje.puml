@@ -1,0 +1,16 @@
+@startuml Consultar “Área de materia prima”
+title Consultar “Área de materia prima”
+
+|Usuario|
+start
+:*En área de ensamblaje*;
+:Solicita interfaz de menú de área de ensamblaje;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de área de ensamblaje | Empleados | Turnos | Contratar |;
+
+
+stop
+
+
+@enduml

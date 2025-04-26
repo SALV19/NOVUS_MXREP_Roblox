@@ -1,0 +1,13 @@
+@startuml
+title Consulta inventario de materiales
+
+|User|
+start
+:Consulta inventario de materia prima;
+
+|#AntiqueWhite|Sistema|
+:Recupera inventario de materia prima;
+:Muestra interfaz de materia prima;
+
+stop
+@enduml

@@ -1,0 +1,17 @@
+@startuml Inicia simulaicón
+title Inicia simulaicón
+|Usuario|
+start
+:Consulta simulaciones disponibles {R7};
+|#AntiqueWhite|Sistema|
+:Consulta información de la simulación;
+:Establece fondos del equipo;
+:Establece materiales del equipo;
+:Establece empleados del equipo;
+:Establece proyectos del equipo;
+:Carga la simulación;
+|Usuario|
+:Aparece en la simulación y tiene el control;
+stop
+
+@enduml

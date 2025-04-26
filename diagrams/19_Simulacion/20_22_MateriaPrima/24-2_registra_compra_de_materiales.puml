@@ -1,0 +1,26 @@
+@startuml Registrar compra de materiales
+title Registrar compra de materiales
+
+|Usuario|
+start
+:Selecciona cantidad de material a comprar;
+|#AntiqueWhite|Sistema|
+:Actualiza precio;
+
+|Usuario|
+:Añade productos al carrito de compra;
+
+|Sistema|
+:Actualiza el carrito;
+:Actualiza precio de comrpa;
+:Actualiza Tiempo de entrega de materiales;
+
+|Usuario|
+:Confirma compra;
+
+|Sistema|
+:Registra compra -> {R1_1};
+
+stop
+
+@enduml

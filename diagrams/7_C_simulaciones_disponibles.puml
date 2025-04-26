@@ -1,0 +1,15 @@
+@startuml Consultar simulaciones disponibles
+title Consultar simulaciones disponibles
+|Usuario|
+start
+:Solicita interfaz de simulaciones;
+|#AntiqueWhite|Sistema|
+:Consulta información de simulaciones disponibles para el usuario;
+:Mustra simulaciones disponibles;
+|Usuario|
+:Inicia simulación;
+|Sistema|
+:Carga simulación seleccionada;
+stop
+
+@enduml

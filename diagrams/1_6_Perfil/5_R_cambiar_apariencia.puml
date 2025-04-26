@@ -1,0 +1,12 @@
+@startuml Cambiar apariencia
+title Cambiar apariencia
+|Usuario|
+start
+:Consulta perfil {R4};
+:Selecciona nuevo avatar;
+|#AntiqueWhite|Sistema|
+:Actualiza apariencia en la base de datos;
+:Actualiza apariencia en sistema;
+stop
+
+@enduml

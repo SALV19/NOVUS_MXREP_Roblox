@@ -1,0 +1,21 @@
+@startuml Consutla ingresos
+title Consutla ingresos
+
+|Usuario|
+start 
+:Ingresa al menú;
+
+|#AntiqueWhite|Sistema|
+:Muestra ingresos recientes;
+
+|Usuario|
+:Solicita información de ingresos;
+
+|Sistema|
+:Recupera ventas y ganancias de la base de datos;
+:Genera reporte de ingresos en el periodo de tiempo;
+
+stop
+
+
+@enduml

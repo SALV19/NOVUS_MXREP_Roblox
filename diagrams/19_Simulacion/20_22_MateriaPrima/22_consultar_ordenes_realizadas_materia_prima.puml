@@ -1,0 +1,14 @@
+@startuml Consultar ordenes realizadas de materia prima
+title Consultar ordenes realizadas de materia prima
+
+|Usuario|
+start
+:Consutla órdenes realizadas de materia prima;
+
+|#AntiqueWhite|Sistema|
+:Recupera órdenes realizadas de materia prima;
+:Muestra órdenes realizadas de materia prima;
+
+stop
+
+@enduml

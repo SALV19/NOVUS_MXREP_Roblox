@@ -1,0 +1,21 @@
+@startuml Consultar ordenes de compra de materia
+title Consultar ordenes de compra de materia
+
+|Usuario|
+start
+:Consutla ordenes;
+
+|#AntiqueWhite|Sistema|
+:Recupera ordenes realizadas por el usuario;
+:Muestra síntesis de las ordenes realizadas;
+
+|Usuario|
+:Consulta ordenes realizadas por el equipo;
+
+|Sistema|
+:Recupera ordenes realizadas por el equipo;
+:Muestra síntesis de las ordenes realizadas;
+
+stop
+
+@enduml

@@ -1,0 +1,27 @@
+@startuml Consultar BOM
+title Consulta BOM
+
+|Usuario|
+start
+:Consulta BOM (Bill of materials);
+
+|#AntiqueWhite|Sistema|
+:Recupera productos que se pueden fabricar;
+:Muestra información de fabricación;
+
+|Usuario|
+:Elige producto que quiere producir;
+
+|Sistema|
+:Recupera información de materia prima necesaria para crear el objeto;
+:Muestra información de materiales necesarios para la fabricación de objetos;
+
+|Usuario|
+:Registra cantidad de material necesaria para fabricar objeto;
+
+|Sistema|
+:Actualiza costo final para la construcción del producto;
+
+stop
+
+@enduml

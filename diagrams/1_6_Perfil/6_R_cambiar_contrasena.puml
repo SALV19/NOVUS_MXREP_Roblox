@@ -1,0 +1,24 @@
+@startuml Cambiar contraseña
+title Cambiar contraseña
+|Usuario|
+start
+:Consulta perfil {R4};
+:Solicita interfaz cambiar contraseña;
+|#AntiqueWhite|Sistema|
+:Muestra interfaz cambio de contraseña;
+|Usuario|
+:Ingresa antigua contraseña;
+|Sistema|
+:Autentifica contraseña;
+if (Contraseña coincide) then (Si)
+  |Usuario|
+  :Ingresa nueva contraseña;
+  |Sistema|
+  :Registra nueva contraseña;
+else (No)
+  |Sistema|
+  :Error contraseña no coincide;
+endif
+stop
+
+@enduml

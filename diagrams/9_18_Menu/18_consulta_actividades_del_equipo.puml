@@ -1,0 +1,22 @@
+@startuml Consultar actividades realizadas por el resto del equipo
+title Consultar actividades realizadas por el resto del equipo
+
+|Usuario|
+start
+:Ingresa al menú;
+
+
+|#AntiqueWhite|Sistema|
+:Genera interfáz de menú;
+
+|Usuario|
+:Consulta actividades realizadas por el resto del equipo;
+
+|Sistema|
+:Recupera la información del equipo \nOperaciones realizadas por cada miembro en cada área;
+:Muestra la información en tabla interactiva;
+
+stop
+
+
+@enduml

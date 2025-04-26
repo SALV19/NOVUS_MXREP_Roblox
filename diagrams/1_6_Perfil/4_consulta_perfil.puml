@@ -1,0 +1,11 @@
+@startuml Consultar perfil
+title Consultar perfil 
+|Usuario|
+start
+:Solicita interfáz de perfil personal;
+|#AntiqueWhite|Sistema|
+:Recupera información personal;
+:Muestra interfaz de información personal;
+stop
+
+@enduml

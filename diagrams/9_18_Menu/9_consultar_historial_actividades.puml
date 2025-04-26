@@ -1,0 +1,21 @@
+@startuml Consultar historial de actividades
+title Consultar historial de actividades
+
+|Usuario|
+
+start
+
+:Ingresa al menú;
+|#AntiqueWhite|Sistema|
+:Genera interfáz de menú;
+
+|Usuario|
+:Ingresa a historial de actividades;
+
+|Sistema|
+:Recupera transacciones y operaciones \nanteriores realizadas por el resto del equipo;
+:Muestra tabla con las operaciones realizadas anteriormente;
+
+stop
+
+@enduml

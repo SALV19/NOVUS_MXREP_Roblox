@@ -1,0 +1,20 @@
+@startuml Consulta estado de la orden
+title Consulta estado de la orden
+
+|Usuario|
+start
+:Consulta estado de las ordenes;
+
+|#AntiqueWhite|Sistema|
+:Recupera información de las ordenes agendadas;
+:Muestra información de las ordenes al usaurio;
+
+|Usuario|
+:Consulta detalles de la orden;
+
+|Sistema|
+:Muestra table de detalles de la orden;
+
+stop
+
+@enduml

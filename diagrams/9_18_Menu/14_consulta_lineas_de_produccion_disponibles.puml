@@ -1,0 +1,27 @@
+@startuml Consultar líneas de producción disponibles
+title Consultar líneas de producción disponibles
+
+|Usuario|
+start
+:Ingresa al menu;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfáz de menú;
+
+|Usuario|
+:Solicita interfáz de lineas de producción activas;
+
+|Sistema|
+:Recupera de la base de datos las \nlineas de producción asignadas al equipo;
+:Muestra información de líneas de producción activas;
+
+|Usuario|
+:Solicita interfáz de líneas de producción disponibles;
+
+|Sistema|
+:Muestra información sobre las líneas de producción disponible;
+
+stop
+
+
+@enduml

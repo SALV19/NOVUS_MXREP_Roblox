@@ -1,0 +1,21 @@
+@startuml Consultar eventos por suceder
+title Consultar eventos por suceder
+  
+|Usuario|
+start
+:Ingresa al menú;
+
+
+|#AntiqueWhite|Sistema|
+:Genera interfáz de menú;
+
+|Usuario|
+:Consulta eventos;
+
+|Sistema|
+:Recupera eventos agendados de la base de datos;
+:Muestra la información de los eventos;
+
+stop
+
+@endluml

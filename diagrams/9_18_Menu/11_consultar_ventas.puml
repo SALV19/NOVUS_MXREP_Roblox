@@ -1,0 +1,20 @@
+@startuml Consultar ventas
+title Consultar ventas
+
+|Usuario|
+start
+:Ingresa a menú;
+
+|#AntiqueWhite|Sistema|
+:Genera interfáz de menú;
+
+|Usuario|
+:Consulta ventas realizadas;
+
+|Sistema|
+:Recupera ventas realizadas por el equipo de la base de datos;
+:Muestra la información al usuario;
+
+stop
+
+@enduml

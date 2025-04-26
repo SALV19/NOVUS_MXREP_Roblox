@@ -1,0 +1,22 @@
+@startuml Consultar ranking de la simulación
+title Consultar ranking de la simulación
+  
+|Usuario|
+start
+:Ingresa al menú;
+
+
+|#AntiqueWhite|Sistema|
+:Genera interfáz de menú;
+
+|Usuario|
+:Consulta Ranking;
+
+|Sistema|
+:Recupera información de los equipos, ordeners completadas y fondos;
+:Ordena los equipos en orden de mayor dinero y órdenes completadas;
+:Muestra ranking;
+
+stop
+
+@endluml

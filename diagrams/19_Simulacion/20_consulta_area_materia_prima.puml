@@ -1,0 +1,15 @@
+@startuml Consultar “Área de materia prima”
+title Consultar “Área de materia prima”
+
+|Usuario|
+start
+:*En área de materia prima*;
+:Solicita menú de materia prima;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de materia prima | Materia prima | BOM | Compra | Ordenes ;
+
+stop
+
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml Transportar usuario a las diferentes zonas
+title Transportar usuario a las diferentes zonas
+
+|Usuario|
+start 
+:Solicita interfáz de teletransportación;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de teletransportador;
+
+|Usuario|
+:Selecciona área de teletransportación \
+Materia prima | Ensamblaje | Construcción;
+
+|Sistema|
+:Mueve al usuario a nueva ubicación;
+
+stop
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml Registra información de transaccion
+title Registra información de transaccion
+
+|Usuario|
+start
+:Realiza cualquier transacción en\nSimulation | Finance | BOM | \
+Purchasing | RawMaterial | Employees \n| Production Line | Sales \
+| Ranking | Team Activity Log | Orders;
+
+|#AntiqueWhite|Sistema|
+:Registra información de la transacción, fecha y actor;
+
+@enduml

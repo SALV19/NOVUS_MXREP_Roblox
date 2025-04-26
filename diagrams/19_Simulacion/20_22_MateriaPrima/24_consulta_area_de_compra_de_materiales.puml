@@ -1,0 +1,28 @@
+@startuml Consultar área de compra de materiales
+title Consultar área de compra de materiales
+
+|Usuario|
+start
+:*En área de materia prima*;
+:Solicita vista de compra de materiales;
+:Solicita vista proveedores -> {24-1};
+
+|#AntiqueWhite|Sistema|
+:Recupera información de proveedores;
+:Muestra proveedores;
+
+|Usuario|
+:Solicita vista de materia prima -> {24-2};
+
+|Sistema|
+:Recupera materia prima;
+:Muestra catálogo de materia prima;
+
+|Usuario|
+:Solicita estado de ordenes -> {24-3};
+
+|Sistema|
+:Recupera órdenes realizadas por el equipo;
+:Muestra ordenes del equipo;
+
+@enduml

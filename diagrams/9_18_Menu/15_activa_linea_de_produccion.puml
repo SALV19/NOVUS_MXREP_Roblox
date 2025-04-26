@@ -1,0 +1,16 @@
+@startuml Activar línea de producción
+title Activar línea de producción
+
+|Usuario|
+start 
+:Consulta lineas de producción {R-14};
+:Asigna Nombre, recursos de máquinaria y empleados a la línea;
+:Activa linea de producción;
+
+|#AntiqueWhite|Sistema|
+:Registra línea de producción;
+:Empieza funcionamiento de la línea de producción;
+
+stop
+
+@endumml

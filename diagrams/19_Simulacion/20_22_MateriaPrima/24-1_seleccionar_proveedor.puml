@@ -1,0 +1,14 @@
+@startuml Seleccionar proveedor
+
+|Usaurio|
+start
+:Selecciona proveedor;
+:Selecciona medio de transporte;
+:Guarda opciones;
+
+|#AntiqueWhite|Sistema|
+:Actualiza opciones de proveedor y transporte;
+
+stop
+
+@enduml

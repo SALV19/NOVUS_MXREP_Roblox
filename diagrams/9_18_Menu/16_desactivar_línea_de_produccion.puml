@@ -1,0 +1,15 @@
+@startuml Desactiva Línea de producción
+title Desactiva Línea de producción
+
+|Usuario|
+start 
+:Consulta lineas de producción {R-14};
+:Desactiva linea de producción;
+
+|#AntiqueWhite|Sistema|
+:Cambia el estado de la línea de producción;
+:Detiene el funcionamiento de la línea de producción;
+
+stop
+
+@endumml
