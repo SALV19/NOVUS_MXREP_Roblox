@@ -1,0 +1,17 @@
+@startuml Modifica departamento de trabajo de empleado
+title Modifica departamento de trabajo de empleado
+
+|Usuario|
+start
+:Solicita vista de empleados -> {REQ-27};
+:Selecciona empleado;
+:Modifica departamento de trabajo de empleado;
+
+|#AntiqueWhite|Sistema|
+:Modifica información del sistema departamento del empleado;
+
+stop
+
+
+
+@enduml

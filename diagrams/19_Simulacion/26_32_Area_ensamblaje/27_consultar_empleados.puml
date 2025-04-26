@@ -1,0 +1,14 @@
+@startuml Consultar empleados
+title Consultar empleados
+
+|Usuario|
+start
+:Solicita vista de empleados;
+
+|#AntiqueWhite|Sistema|
+:Recupera información de empleados, turnos, salario;
+:Muestra información de empleados (Nombre, Fase, Departamento, turno);
+
+stop
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml Modifica turno de trabajo a empleado
+title Modifica turno de trabajo a empleado
+
+|Usuario|
+start
+:Solicita vista de turnos -> {REQ-27};
+:Selecciona empleado;
+:Modifica turno de trabajo de empleado | 3 turnos |;
+
+|#AntiqueWhite|Sistema|
+:Modifica información del sistema sobre el turno de trabajo del empleado;
+
+stop
+
+
+
+@enduml

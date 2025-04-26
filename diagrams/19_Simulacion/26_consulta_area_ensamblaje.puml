@@ -7,7 +7,8 @@ start
 :Solicita interfaz de menú de área de ensamblaje;
 
 |#AntiqueWhite|Sistema|
-:Muestra interfaz de área de ensamblaje | Empleados | Turnos | Contratar |;
+:Muestra interfaz de área de ensamblaje \n| Empleados | Turnos | Contratar |;
+:Default -> Empleados;
 
 
 stop

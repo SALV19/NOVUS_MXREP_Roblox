@@ -7,7 +7,7 @@ start
 :Solicita menú de materia prima;
 
 |#AntiqueWhite|Sistema|
-:Muestra interfaz de materia prima | Materia prima | BOM | Compra | Ordenes ;
+:Muestra interfaz de materia prima \n| Materia prima | BOM | Compra | Ordenes |;
 
 stop
 

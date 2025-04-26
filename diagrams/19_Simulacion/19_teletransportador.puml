@@ -6,11 +6,11 @@ start
 :Solicita interfáz de teletransportación;
 
 |#AntiqueWhite|Sistema|
-:Muestra interfaz de teletransportador;
+:Muestra interfaz de teletransportador \
+\n| Materia prima | Ensamblaje | Construcción |;
 
 |Usuario|
-:Selecciona área de teletransportación \
-Materia prima | Ensamblaje | Construcción;
+:Selecciona área de teletransportación;
 
 |Sistema|
 :Mueve al usuario a nueva ubicación;

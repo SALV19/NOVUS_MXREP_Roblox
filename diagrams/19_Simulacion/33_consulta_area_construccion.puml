@@ -1,0 +1,15 @@
+@startuml Consulta área de construcción
+title Consulta área de construcción
+
+|Usuario|
+start
+:*En la zona de construcción*;
+:Solicita menú de área de construcción;
+
+|#AntiqueWhite|Sistema|
+:Muestra menú de área de construcción\
+\n| Inventario de activos fijos | Compra de activos fijos | Asignación de activos fijos |;
+
+stop
+
+@enduml

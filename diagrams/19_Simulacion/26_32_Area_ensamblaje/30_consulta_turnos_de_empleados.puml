@@ -1,0 +1,15 @@
+@startuml Consultar turnos de trabajo de empleados
+title Consultar turnos de trabajo de empleados
+
+|Usuario|
+start
+:Solicita vista de turnos -> {REQ-27};
+
+|#AntiqueWhite|Sistema|
+:Recupera información de turnos de empleados;
+
+stop
+
+
+
+@enduml

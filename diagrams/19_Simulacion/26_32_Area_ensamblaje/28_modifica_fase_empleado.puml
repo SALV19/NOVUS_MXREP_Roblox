@@ -1,0 +1,17 @@
+@startuml Modificar fase de trabajo de empleado
+title Modificar fase de trabajo de empleado
+
+|Usuario|
+start
+:Solicita vista de empleados -> {REQ-27};
+:Selecciona empleado;
+:Modifica fase de trabajo de empleado;
+
+|#AntiqueWhite|Sistema|
+:Modifica información del sistema en fase de trabajo del empleado;
+
+stop
+
+
+
+@enduml

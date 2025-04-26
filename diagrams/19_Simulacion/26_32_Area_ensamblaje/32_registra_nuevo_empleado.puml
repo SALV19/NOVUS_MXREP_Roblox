@@ -1,0 +1,28 @@
+@startuml Registra nuevo empleado
+title Registra nuevo empleado
+
+|Usuario|
+start
+:Solicita interfaz de contratación de empleados;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de contratación de empleados;
+
+|Usuario|
+:Selecciona cantidad de empleados a contratar;
+:Selecciona turnos;
+:Selecciona departamento;
+:Sellecciona fase de ensamblaje;
+
+|Sistema|
+:Calcula el precio;
+
+|Usuario|
+:Confirma contratación de empleados;
+
+|Sistema|
+:Registra nuevos empleados para el equipo;
+
+stop
+
+@enduml
