@@ -8,7 +8,8 @@ start
 
 |#AntiqueWhite|Sistema|
 :Muestra menú de área de construcción\
-\n| Inventario de activos fijos | Compra de activos fijos | Asignación de activos fijos |;
+\n| Inventario de activos fijos | Compra de activos fijos |;
+:Inventario de activos fijos *Default*;
 
 stop
 

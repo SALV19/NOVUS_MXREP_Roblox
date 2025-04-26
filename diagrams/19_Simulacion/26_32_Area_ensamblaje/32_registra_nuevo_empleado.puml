@@ -21,6 +21,8 @@ start
 :Confirma contratación de empleados;
 
 |Sistema|
+:Comprueba que el equipo tenga fondos suficientes;
+:Procesa la compra;
 :Registra nuevos empleados para el equipo;
 
 stop

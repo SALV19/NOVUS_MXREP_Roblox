@@ -1,0 +1,23 @@
+@startuml Vende activo fijo
+title Vende activo fijo
+
+|Usuario|
+start
+:Consulta activos fijos en el inventario -> {REQ-34};
+:Selecciona un activo fijo vender;
+
+|#AntiqueWhite|Sistema|
+:Recupera precio de activo fijo;
+:Calcula precio de venta de activo fijo;
+:Muestra interfaz de venta de activos fijos;
+
+|Usuario|
+:Confirma venta de activo fijo;
+
+|Sistema|
+:Elimina activo fijo del inventario;
+:Aumenta cantidad de dinero del eqipo;
+
+stop
+
+@enduml

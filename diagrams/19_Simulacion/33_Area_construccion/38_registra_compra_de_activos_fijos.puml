@@ -1,0 +1,43 @@
+@startuml Registra compra de activos fijos
+title Registra compra de activos fijos
+
+|Usuario|
+start
+:Consulta activos fijos a la venta -> {REQ_37};
+:Selecciona activos fijos a comprar al carrito;
+
+|#AntiqueWhite|Sistema|
+:Añade activos fijos al carrito;
+:Actualiza precio;
+
+|Usuario|
+:Elimina activos fijos del carrito;
+
+|Sistema|
+:Elimina activos fijos de la orden de compra;
+:Actualiza precio;
+
+|Usuario|
+:Asigna fase de producción al activo fijo;
+
+|Sistema|
+:Asigna fases de producción temporales a activo fijo;
+
+|Usuario|
+:Confirma compra;
+
+|Sistema|
+if ("Equipo tiene fondos suficientes") then (Si)
+  :Comprueba que el usaurio tenga el dinero necesario;
+  :Procesa la compra (Resta dinero al usuario y añade activos fijos a su inventario);
+  :Asigna activos fijos comprados a fases de producción seleccionadas;
+  :Registra compra -> {R1_1};
+else (No)
+  :Error: compra no se pudo completar;
+endif
+
+
+stop
+
+
+@enduml

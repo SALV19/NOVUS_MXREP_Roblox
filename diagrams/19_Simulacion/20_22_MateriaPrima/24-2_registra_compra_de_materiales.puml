@@ -19,8 +19,11 @@ start
 :Confirma compra;
 
 |Sistema|
-:Registra compra -> {R1_1};
-
+if ("Equipo tiene fondos suficientes") then (Si)
+  :Registra compra -> {R1_1};
+else (No)
+  :Error: compra no se pudo completar;
+endif
 stop
 
 @enduml

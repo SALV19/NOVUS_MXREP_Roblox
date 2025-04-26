@@ -1,0 +1,15 @@
+@startuml Consulta activos fijos a la venta
+title Consulta activos fijos a la venta
+
+|Usuario|
+start
+:Solicita interfaz de activos fijos a la venta;
+
+|#AntiqueWhite|Sistema|
+:Recupera información de activos fijos a la venta;
+:Muestra interfaz de activos fijos a la venta;
+
+stop
+
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml Consulta inventario de activos fijos
+title Consulta inventario de activos fijos
+
+|Usuario|
+start
+:Consulta activos fijos en el inventario;
+
+|#AntiqueWhite|Sistema|
+:Recupera activos fijos del equipo;
+:Muestra activos fijos en el inventario;
+
+stop
+
+@enduml

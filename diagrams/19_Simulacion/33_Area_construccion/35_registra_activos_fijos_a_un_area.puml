@@ -1,0 +1,20 @@
+@startuml Registra activos fijos a un área
+title Registra activos fijos a un área
+
+|Usuario|
+start
+:Consulta activos fijos en el inventario -> {REQ-34};
+:Selecciona un activo fijo para asignar;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de asignación de activos fijos;
+
+|Usuario|
+:Asigna activo fijo a una fase de producción;
+
+|Sistema|
+:Modifica fase asignada al activo fijo;
+
+stop
+
+@enduml
