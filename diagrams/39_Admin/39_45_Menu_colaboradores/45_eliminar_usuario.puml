@@ -1,0 +1,14 @@
+@startuml Eliminar Usuario
+title Eliminar Usuario
+
+|Usuario|
+start
+:Consulta usuarios {REQ-40};
+:Seleccciona opción de eliminar usuario;
+
+|#AntiqueWhite|Sistema|
+:Elimina usuario del sistema;
+
+stop
+
+@enduml

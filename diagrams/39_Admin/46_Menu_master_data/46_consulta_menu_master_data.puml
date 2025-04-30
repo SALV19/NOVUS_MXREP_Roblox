@@ -1,0 +1,17 @@
+@startuml Consultar Menú Master Data
+title Consultar Menú Master Data
+
+|Usuario|
+start
+
+:Solicita interfaz de data maestra;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de Data maestra
+| Materia Prima | Familia de productos | Compradores | CEDIS | Proveedores |
+| Empleados | Gastos | Activos fijos | Transporte | Inventario de materia prima |
+| Inventario de activos fijos | Historial de órdenes | Salarios | Fases de línea de producción |;
+
+stop
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml Edita información del usuario
+title Edita información del usuario
+
+|Usuario|
+start
+:Solicita interfaz editar información del usuario;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz para modificar la información del usuario;
+
+|Usuario|
+:Modifica información;
+:Guarda cambios;
+
+|Sistema|
+:Registra cambios en el sistema;
+
+stop
+
+@enduml

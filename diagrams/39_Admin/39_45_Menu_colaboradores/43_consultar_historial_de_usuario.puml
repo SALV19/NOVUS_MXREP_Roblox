@@ -1,0 +1,15 @@
+@startuml Consultar historial de usuario
+title Consultar historial de usuario
+
+|Usuario|
+start
+:Consulta usuarios {REQ-39};
+:Solicita historial de actividades de un usuario;
+
+|#AntiqueWhite|Sistema|
+:Recupera información de actividades / historial del usuario;
+:Muestra interfaz con las actividades hechas por el usuario;
+
+stop
+
+@enduml

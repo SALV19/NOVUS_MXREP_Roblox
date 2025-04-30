@@ -1,0 +1,20 @@
+@startuml Registra usuario
+title Registra usuario
+
+|Usuario|
+start
+:Consulta Solicitudes de registro {REQ->40};
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz de registro de usuario;
+
+|Usuario| 
+:Ingresa la información del nuevo usuario a registrar;
+
+|Sistema|
+:Genera usuario con la información agregada;
+
+stop
+
+
+@enduml

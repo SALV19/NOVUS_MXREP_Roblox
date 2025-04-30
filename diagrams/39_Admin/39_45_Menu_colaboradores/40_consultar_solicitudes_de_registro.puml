@@ -1,0 +1,15 @@
+@startuml Consultar solicitudes de registro
+title Consultar solicitudes de registro
+
+|Usuario|
+start
+:Solicita interfaz de solicitudes de registro;
+
+|#AntiqueWhite|Sistema|
+:Recupera solicitudes de registro;
+:Muestra información de solicitudes de registro;
+
+stop
+
+
+@enduml

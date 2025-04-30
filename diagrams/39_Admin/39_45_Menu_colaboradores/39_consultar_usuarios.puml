@@ -1,0 +1,21 @@
+@startuml Consultar Usuarios
+title Consultar Usuarios
+
+|Usuario|
+start
+:Ingresa a la aplicación como administrador;
+:Solicita interfaz de menú opciones;
+
+|#AntiqueWhite|Sistema|
+:Genera interfaz de menú opciones;
+
+|Usuario|
+:Consulta colaboradores;
+
+|Sistema|
+:Recupera información de usuarios registrados;
+:Muestra información de usuarios registrados;
+
+stop
+
+@enduml

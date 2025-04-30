@@ -1,0 +1,15 @@
+@startuml Registra materia prima
+title Registra materia prima
+
+|Usuario|
+start
+
+:Solicita interfaz de materia prima;
+
+|#AntiqueWhite|Sistema|
+:Recupera información de materia prima;
+:Muestra interfaz de materia prima registrada;
+
+stop
+
+@enduml

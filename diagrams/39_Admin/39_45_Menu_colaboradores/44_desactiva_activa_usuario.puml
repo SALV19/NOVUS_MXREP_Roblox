@@ -1,0 +1,18 @@
+@startuml Desactiva / Activa usuario
+title Desactiva / Activa usuario
+
+|Usuario|
+start
+:Consulta usuarios {REQ-40};
+:Sellecciona opción de desactivar / activar usuario;
+
+|#AntiqueWhite|Sistema|
+if (Usuario activo) then (Desactivar)
+  :Cambia estatus del usuario a inactivo;
+else (Activar)
+  :Cambia estatus del usuario a activo;
+endif
+
+stop
+
+@enduml

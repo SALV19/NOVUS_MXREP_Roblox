@@ -1,0 +1,14 @@
+@startuml Registra materia prima
+title Registra materia prima
+
+|Usuario|
+:Solicita interfaz de materia prima {REQ-47};
+:Selecciona opción de registro de nueva materia prima;
+
+|#AntiqueWhite|Sistema|
+:Muestra interfaz para registrar nueva materia prima;
+
+|Usuario|
+:Registra información de materia prima: Nombre, foto, precio, capacidad máxima por espacio;
+
+@enduml
