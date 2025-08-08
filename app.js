@@ -1,31 +1,32 @@
-const express = require('express');
-const http = require('http');
-const { Server } = require('socket.io');
+require("dotenv").config();
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
 
 const app = express();
-const server = http.createServer(app);
-const io = new Server(server);
+const port = process.env.PORT;
+//const uri = process.env.MONGO_URI;
 
-// Servir archivos estáticos (como el HTML del juego)
-app.use(express.static('public'));
+const getDataRoutes = require("./Backend/routes/Data/data.routes")
 
-// Escuchar conexiones de clientes
-io.on('connection', (socket) => {
-  console.log('🟢 Nuevo jugador conectado');
 
-  // Recibir jugada de un jugador y reenviarla a todos
-  socket.on('jugada', (data) => {
-    console.log('📩 Jugada recibida:', data);
-    io.emit('actualizarTablero', data); // se envía a todos
-  });
+// Conectar a MongoDB
+/*mongoose
+  .connect(uri)
+  .then(() => console.log("Conectado a la base de datos de MongoDB"))
+  .catch((error) => console.error("Error al conectar con la base de datos:", error));
+*/
 
-  // Cuando se desconecta un jugador
-  socket.on('disconnect', () => {
-    console.log('🔴 Jugador desconectado');
-  });
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "frontend-web", "views"));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "Frontend", "views")));
+app.use(express.json());
+
+app.use("/", getDataRoutes);
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
 });
-
-server.listen(3000, () => {
-  console.log('Servidor WebSocket corriendo en http://localhost:3000');
-});
- 
