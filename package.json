@@ -4,7 +4,8 @@
   "description": "Other references: [github](https://github.com/luarocks/lua-style-guide)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
     "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

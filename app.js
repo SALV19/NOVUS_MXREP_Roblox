@@ -4,7 +4,11 @@ const path = require("path");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT ?? 3000;
+
+if (!process.env) {
+  console.log("ENV not loaded")
+}
 //const uri = process.env.MONGO_URI;
 
 const getDataRoutes = require("./Backend/routes/Data/data.routes")
