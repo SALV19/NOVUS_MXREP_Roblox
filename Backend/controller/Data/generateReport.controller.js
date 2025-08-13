@@ -5,10 +5,9 @@ const path = require("path");
 // Sends data to python script to create an excel file
 // @request: ExpressRequest
 // @response: ExpressResponse
-function generateReport(request, response) {
+async function generateReport(request, response) {
   const pythonProcess = startProcess(request);
-
-  const { excelFile, error } = handleScriptProcess(pythonProcess);
+  const {excelFile, error} = await handleScriptProcess(pythonProcess, request);
 
   if (excelFile) {
     response
@@ -20,7 +19,9 @@ function generateReport(request, response) {
       .setHeader("Content-Type", "application/octet-stream")
       .send(excelFile);
   } else {
+    console.error("ERROR: ")
     console.error(error);
+    response.status(500).send(error)
   }
 }
 
@@ -33,32 +34,31 @@ function startProcess(request) {
 
   return spawn(python_path, [
     script_path,
-    JSON.stringify(request.body.robloxInfo),
+    JSON.stringify("{name: hola}"),
   ]);
 }
 
 // Creates the binary of the file to be sent to the users.
 // @pythonProcess: ChildProcessWithoutNullStream
 // @returns: JSON {file, error}
-function handleScriptProcess(pythonProcess) {
+async function handleScriptProcess(pythonProcess) {
   // Binary buffer / array
-  const result = [];
-  pythonProcess.stdout.on("data", (data_chunk) => {
-    result.push(data_chunk);
-  });
+  return new Promise((resolve, reject) => {
+    const result = [];
+    pythonProcess.stdout.on("data", (data_chunk) => {
+      result.push(data_chunk);
+    });
 
-  pythonProcess.on("close", (code) => {
-    const buffer = Buffer.concat(result);
-    if (code != 0) {
-      return {
-        result: null,
-        error:
-          "Script error: \nPython script had an error while creating the file",
-      };
-    }
+    pythonProcess.on("close", (code) => {
+      if (code != 0) {
+        return reject
+      }
+      const buffer = Buffer.concat(result);
 
-    return { result: buffer, error: null };
-  });
+      return resolve({ excelFile: buffer, error: null });
+    });
+  })
+  
 }
 
 module.exports = {
