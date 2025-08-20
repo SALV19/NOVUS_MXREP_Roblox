@@ -1,7 +1,7 @@
 async function getData(request, response) {
   try {
-    const dataFromRoblox = request.body.dataFromRoblox
-    console.log(dataFromRoblox)
+    const dataFromRoblox = request.body.dataFromRoblox;
+    console.log(dataFromRoblox);
     response.status(201).send("received");
   } catch (error) {
     console.log(error);
@@ -11,5 +11,5 @@ async function getData(request, response) {
 }
 
 module.exports = {
-    getData
- };
+  getData,
+};

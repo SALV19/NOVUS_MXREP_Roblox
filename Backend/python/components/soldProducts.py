@@ -1,8 +1,8 @@
 class SoldProducts:
-    def __init__(self, productID, vehicle, price, amount, team, player):
-        self.productID = productID
-        self.vehicle = vehicle
+    def __init__(self, runId, price, amount, vehicleName, team, player):
+        self.runId = runId
         self.price = price
         self.amount = amount
+        self.vehicleName = vehicleName
         self.team = team
         self.player = player

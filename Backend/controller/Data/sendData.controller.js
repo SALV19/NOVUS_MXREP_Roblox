@@ -1,8 +1,10 @@
-async function sendData(request, response) {
+const { orderSold } = require("../orderSold.controller");
+
+function sendData(request, response) {
   try {
-    const dataFromRoblox = request.body.dataFromRoblox
-    console.log(request)
-    response.status(201);
+    const dataFromRoblox = request.body.dataFromRoblox;
+    handleEvent(dataFromRoblox);
+    response.status(201).send("Data created");
   } catch (error) {
     console.log(error);
     console.error("Error desde controller:", error);
@@ -10,6 +12,14 @@ async function sendData(request, response) {
   }
 }
 
+function handleEvent(dataFromRoblox) {
+  const event = dataFromRoblox.event;
+  let saveFunction;
+  if (event == "order_sold") saveFunction = orderSold(dataFromRoblox);
+
+  return saveFunction;
+}
+
 module.exports = {
-    sendData
- };
+  sendData,
+};
