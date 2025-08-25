@@ -8,13 +8,6 @@ const EmployeesSchema = new Schema({
   employeeId: String,
   type: String,
   baseSalary: Number,
-  imms: Number,
-  infonavit: Number,
-  vouchers: Number,
-  bonsu: Number,
-  savings: Number,
-  cafeteria: Number,
-  isr: Number
 })
 
 EmployeesSchema.statics.findById = function(id) {
