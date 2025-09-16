@@ -4,10 +4,10 @@ const ObjectId = Schema.ObjectId;
 
 const EmployeesSchema = new Schema({
   id: ObjectId,
-  runId: String,
-  employeeId: String,
-  type: String,
-  baseSalary: Number,
+  IDCorrida: String,
+  IDEmpleado: String,
+  Tipo: String,
+  SalarioBase: Number,
 })
 
 EmployeesSchema.statics.findById = function(id) {

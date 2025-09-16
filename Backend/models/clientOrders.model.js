@@ -4,17 +4,16 @@ const ObjectId = Schema.ObjectId;
 
 const COYearSchema = new Schema({
   id: ObjectId,
-  runId: String,
-  year: Number,
-  orders: Number,
+  IDCorrida: String,
+  Year: Number,
+  TotalOrders: Number,
 })
 
 const COMonthSchema = new Schema({
   id: ObjectId,
-  runId: String,
-  year: Number,
-  month: Number,
-  percentage: Number
+  IDCorrida: String,
+  Month: Number,
+  Percentage: Number
 })
 
 COYearSchema.statics.findById = function(id) {

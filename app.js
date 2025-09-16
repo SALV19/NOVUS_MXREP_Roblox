@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const app = express();
 const port = process.env.PORT ?? 3000;
 
-if (!process.env) {
+if (!process.env.PORT) {
   console.log("ENV not loaded");
 }
 const uri = process.env.MONGO_URI;
